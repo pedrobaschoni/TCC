@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.ts",
   "scripts": {
-    "start": "npx tsx server.ts"
+    "build": "npx tsc server.ts",
+    "start": "node server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
