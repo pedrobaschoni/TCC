@@ -97,7 +97,7 @@ app.get('/api/contatos', async (req: Request, res: Response) => {
 });
 
 // ================= START SERVER =================
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 inicializarBanco().then(() => {
   app.listen(PORT, () => console.log(`🚀 Servidor rodando na porta ${PORT}`));
 });

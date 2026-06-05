@@ -2,22 +2,23 @@
   "name": "backend-tcc",
   "version": "1.0.0",
   "description": "",
-  "main": "server.ts",
+  "main": "dist/server.js",
   "scripts": {
-    "build": "npx tsc server.ts",
-    "start": "node server.js"
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx server.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "sqlite": "^5.1.1",
-    "sqlite3": "^5.1.7",
-    "tsx": "^4.19.2"
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/sqlite3": "^3.1.11",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "tsx": "^4.19.2"
   }
 }
